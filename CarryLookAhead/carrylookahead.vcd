@@ -1,0 +1,119 @@
+$date
+	Sat Aug 29 16:36:28 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 4 ! SAux [3:0] $end
+$var wire 4 " S [3:0] $end
+$var wire 1 # CoutAux $end
+$var wire 1 $ Cout $end
+$var reg 4 % A [3:0] $end
+$var reg 4 & B [3:0] $end
+$var reg 1 ' Cin $end
+$scope module AUX $end
+$var wire 4 ( A [3:0] $end
+$var wire 4 ) B [3:0] $end
+$var wire 1 ' Cin $end
+$var wire 4 * S [3:0] $end
+$var wire 1 # Cout $end
+$upscope $end
+$scope module DUT $end
+$var wire 4 + A [3:0] $end
+$var wire 4 , B [3:0] $end
+$var wire 1 ' Cin $end
+$var wire 1 $ Cout $end
+$var wire 4 - S [3:0] $end
+$var wire 4 . p [3:0] $end
+$var wire 4 / g [3:0] $end
+$var wire 3 0 c [3:1] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx 0
+bx /
+bx .
+bx -
+bx ,
+bx +
+bx *
+bx )
+bx (
+x'
+bx &
+bx %
+x$
+x#
+bx "
+bx !
+$end
+#1
+1$
+b111 0
+b1110 "
+b1110 -
+b0 .
+b1111 /
+b1110 !
+b1110 *
+1#
+0'
+b1111 &
+b1111 )
+b1111 ,
+b1111 %
+b1111 (
+b1111 +
+#2
+1$
+b111 0
+b0 "
+b0 -
+b1110 .
+b1 /
+b0 !
+b0 *
+b1 %
+b1 (
+b1 +
+#3
+0$
+b1000 "
+b1000 -
+b110 .
+b1000 !
+b1000 *
+0#
+b111 &
+b111 )
+b111 ,
+#4
+1$
+b10 "
+b10 -
+b1100 .
+b11 /
+b10 !
+b10 *
+1#
+b1011 %
+b1011 (
+b1011 +
+#5
+b0 0
+b111 "
+b111 -
+b111 .
+b1000 /
+b111 !
+b111 *
+b1100 &
+b1100 )
+b1100 ,
+#6

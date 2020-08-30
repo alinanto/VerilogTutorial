@@ -1,0 +1,59 @@
+$date
+	Tue Aug 25 13:47:25 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 8 ! Wand [7:0] $end
+$var wire 8 " Wor [7:0] $end
+$var wire 8 # Wxnor [7:0] $end
+$var wire 8 $ Wxor [7:0] $end
+$var reg 8 % A [7:0] $end
+$var reg 8 & B [7:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx &
+bx %
+bx $
+bx #
+bx "
+bx !
+$end
+#1
+b1111 #
+b11110000 $
+b11111111 "
+b1111 !
+b1111 &
+b11111111 %
+#2
+b11111111 #
+b0 $
+b11111111 !
+b11111111 &
+#3
+b11110000 #
+b1111 $
+b1111 "
+b0 !
+b1111 &
+b0 %
+#4
+b1100110 #
+b10011001 $
+b11011101 "
+b1000100 !
+b1010101 &
+b11001100 %
+#5
+b11111111 #
+b0 $
+b1010101 "
+b1010101 !
+b1010101 %
