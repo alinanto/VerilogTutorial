@@ -1,0 +1,92 @@
+$date
+	Fri Sep 11 14:27:43 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 8 ! count [7:0] $end
+$var reg 1 " clk $end
+$var reg 1 # init $end
+$scope module DUT $end
+$var wire 1 " clk $end
+$var wire 1 # init $end
+$var reg 8 $ count [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx $
+0#
+0"
+bx !
+$end
+#1
+b10000000 !
+b10000000 $
+1#
+#2
+0#
+#7
+b1 !
+b1 $
+1"
+#12
+0"
+#17
+b10 !
+b10 $
+1"
+#22
+0"
+#27
+b100 !
+b100 $
+1"
+#32
+0"
+#37
+b1000 !
+b1000 $
+1"
+#42
+0"
+#47
+b10000 !
+b10000 $
+1"
+#52
+0"
+#57
+b100000 !
+b100000 $
+1"
+#62
+0"
+#67
+b1000000 !
+b1000000 $
+1"
+#72
+0"
+#77
+b10000000 !
+b10000000 $
+1"
+#82
+0"
+#87
+b1 !
+b1 $
+1"
+#92
+0"
+#97
+b10 !
+b10 $
+1"
+#100

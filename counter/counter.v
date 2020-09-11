@@ -10,3 +10,9 @@ module simpleCounter (clk,rst,count);
       count = count + 1;
   end
 endmodule
+
+module clock (clk);
+  output reg clk = 0;
+  always
+    #10 clk = ~clk;
+endmodule
