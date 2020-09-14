@@ -34,7 +34,7 @@ endmodule
 module fullAdder (S,Cout,A,B,Cin);
   input A,B,Cin;
   output S,Cout;
-  wire S1,c1,c2;
+  wire s1,c1,c2;
 
   xor G1 (s1,A,B),
       G2 (S,s1,Cin),

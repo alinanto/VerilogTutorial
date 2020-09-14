@@ -1,0 +1,266 @@
+$date
+	Mon Sep 14 18:10:41 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 8 ! S [7:0] $end
+$var wire 1 " Cout $end
+$var reg 8 # A [7:0] $end
+$var reg 8 $ B [7:0] $end
+$var reg 1 % Cin $end
+$scope module DUT $end
+$var wire 8 & A [7:0] $end
+$var wire 8 ' B [7:0] $end
+$var wire 1 % Cin $end
+$var wire 9 ( carry [8:0] $end
+$var wire 8 ) S [7:0] $end
+$var wire 1 " Cout $end
+$scope begin FAloop[0] $end
+$scope module FA $end
+$var wire 1 * A $end
+$var wire 1 + B $end
+$var wire 1 , Cin $end
+$var wire 1 - Cout $end
+$var wire 1 . S $end
+$var wire 1 / c1 $end
+$var wire 1 0 c2 $end
+$var wire 1 1 s1 $end
+$upscope $end
+$upscope $end
+$scope begin FAloop[1] $end
+$scope module FA $end
+$var wire 1 2 A $end
+$var wire 1 3 B $end
+$var wire 1 4 Cin $end
+$var wire 1 5 Cout $end
+$var wire 1 6 S $end
+$var wire 1 7 c1 $end
+$var wire 1 8 c2 $end
+$var wire 1 9 s1 $end
+$upscope $end
+$upscope $end
+$scope begin FAloop[2] $end
+$scope module FA $end
+$var wire 1 : A $end
+$var wire 1 ; B $end
+$var wire 1 < Cin $end
+$var wire 1 = Cout $end
+$var wire 1 > S $end
+$var wire 1 ? c1 $end
+$var wire 1 @ c2 $end
+$var wire 1 A s1 $end
+$upscope $end
+$upscope $end
+$scope begin FAloop[3] $end
+$scope module FA $end
+$var wire 1 B A $end
+$var wire 1 C B $end
+$var wire 1 D Cin $end
+$var wire 1 E Cout $end
+$var wire 1 F S $end
+$var wire 1 G c1 $end
+$var wire 1 H c2 $end
+$var wire 1 I s1 $end
+$upscope $end
+$upscope $end
+$scope begin FAloop[4] $end
+$scope module FA $end
+$var wire 1 J A $end
+$var wire 1 K B $end
+$var wire 1 L Cin $end
+$var wire 1 M Cout $end
+$var wire 1 N S $end
+$var wire 1 O c1 $end
+$var wire 1 P c2 $end
+$var wire 1 Q s1 $end
+$upscope $end
+$upscope $end
+$scope begin FAloop[5] $end
+$scope module FA $end
+$var wire 1 R A $end
+$var wire 1 S B $end
+$var wire 1 T Cin $end
+$var wire 1 U Cout $end
+$var wire 1 V S $end
+$var wire 1 W c1 $end
+$var wire 1 X c2 $end
+$var wire 1 Y s1 $end
+$upscope $end
+$upscope $end
+$scope begin FAloop[6] $end
+$scope module FA $end
+$var wire 1 Z A $end
+$var wire 1 [ B $end
+$var wire 1 \ Cin $end
+$var wire 1 ] Cout $end
+$var wire 1 ^ S $end
+$var wire 1 _ c1 $end
+$var wire 1 ` c2 $end
+$var wire 1 a s1 $end
+$upscope $end
+$upscope $end
+$scope begin FAloop[7] $end
+$scope module FA $end
+$var wire 1 b A $end
+$var wire 1 c B $end
+$var wire 1 d Cin $end
+$var wire 1 e Cout $end
+$var wire 1 f S $end
+$var wire 1 g c1 $end
+$var wire 1 h c2 $end
+$var wire 1 i s1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0i
+0h
+0g
+0f
+0e
+0d
+0c
+0b
+0a
+0`
+0_
+0^
+0]
+0\
+0[
+0Z
+0Y
+0X
+0W
+0V
+0U
+0T
+0S
+0R
+0Q
+0P
+0O
+0N
+0M
+0L
+0K
+0J
+0I
+0H
+0G
+1F
+0E
+1D
+0C
+0B
+1A
+1@
+0?
+0>
+1=
+1<
+0;
+1:
+19
+18
+07
+06
+15
+14
+13
+02
+01
+00
+1/
+0.
+1-
+0,
+1+
+1*
+b1000 )
+b1110 (
+b11 '
+b101 &
+0%
+b11 $
+b101 #
+0"
+b1000 !
+$end
+#5
+1N
+1L
+1E
+b10000 !
+b10000 )
+0F
+1H
+10
+11
+0/
+1I
+1,
+0+
+03
+12
+1B
+b11111 (
+1%
+b0 $
+b0 '
+b1111 #
+b1111 &
+#10
+13
+1C
+02
+0B
+b1010 $
+b1010 '
+b101 #
+b101 &
+#15
+1"
+1e
+1h
+1d
+1]
+1`
+1\
+1U
+1X
+1T
+b111111111 (
+1M
+0N
+1P
+0V
+0^
+b0 !
+b0 )
+0f
+1Q
+1Y
+1a
+1i
+1+
+1;
+0*
+0:
+1J
+1R
+1Z
+1b
+b1111 $
+b1111 '
+b11110000 #
+b11110000 &
+#25
