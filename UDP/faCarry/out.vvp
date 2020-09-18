@@ -1,0 +1,96 @@
+#! /usr/bin/vvp
+:ivl_version "10.3 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x55d04c971f80 .scope module, "testbench" "testbench" 2 17;
+ .timescale 0 0;
+UDP_faCarry .udp/comb "faCarry", 3
+ ,"00?0"
+ ,"0?00"
+ ,"?000"
+ ,"11?1"
+ ,"1?11"
+ ,"?111";
+L_0x55d04c9a64a0 .udp UDP_faCarry, v0x55d04c972100_0, v0x55d04c9a6280_0, v0x55d04c9a6340_0;
+v0x55d04c972100_0 .var "a", 0 0;
+v0x55d04c9a6280_0 .var "b", 0 0;
+v0x55d04c9a6340_0 .var "c", 0 0;
+v0x55d04c9a63e0_0 .net "carry", 0 0, L_0x55d04c9a64a0;  1 drivers
+    .scope S_0x55d04c971f80;
+T_0 ;
+    %vpi_call 2 23 "$dumpfile", "waveform.vcd" {0 0 0};
+    %vpi_call 2 24 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x55d04c971f80 {0 0 0};
+    %vpi_call 2 25 "$monitor", $time, " carry=%b,a=%b,b=%b,c=%b", v0x55d04c9a63e0_0, v0x55d04c972100_0, v0x55d04c9a6280_0, v0x55d04c9a6340_0 {0 0 0};
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55d04c972100_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55d04c9a6280_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55d04c9a6340_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55d04c972100_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55d04c9a6280_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55d04c9a6340_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55d04c972100_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55d04c9a6280_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55d04c9a6340_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55d04c972100_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55d04c9a6280_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55d04c9a6340_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55d04c972100_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55d04c9a6280_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55d04c9a6340_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55d04c972100_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55d04c9a6280_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55d04c9a6340_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55d04c972100_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55d04c9a6280_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55d04c9a6340_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55d04c972100_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55d04c9a6280_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55d04c9a6340_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_0x55d04c971f80;
+T_1 ;
+    %delay 1000, 0;
+    %vpi_call 2 35 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "faCarry.v";

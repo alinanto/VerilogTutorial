@@ -1,0 +1,107 @@
+#! /usr/bin/vvp
+:ivl_version "10.3 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x56252674eb00 .scope module, "testbench" "testbench" 2 33;
+ .timescale 0 0;
+UDP_faSum .udp/comb "faSum", 3
+ ,"0000"
+ ,"0011"
+ ,"0101"
+ ,"0110"
+ ,"1001"
+ ,"1010"
+ ,"1100"
+ ,"1111";
+L_0x562526763630 .udp UDP_faSum, v0x56252674ec80_0, v0x562526763300_0, v0x5625267633c0_0;
+UDP_faCarry .udp/comb "faCarry", 3
+ ,"00?0"
+ ,"0?00"
+ ,"?000"
+ ,"11?1"
+ ,"1?11"
+ ,"?111";
+L_0x5625267737c0 .udp UDP_faCarry, v0x56252674ec80_0, v0x562526763300_0, v0x5625267633c0_0;
+v0x56252674ec80_0 .var "a", 0 0;
+v0x562526763300_0 .var "b", 0 0;
+v0x5625267633c0_0 .var "c", 0 0;
+v0x562526763460_0 .net "carry", 0 0, L_0x5625267737c0;  1 drivers
+v0x562526763520_0 .net "sum", 0 0, L_0x562526763630;  1 drivers
+    .scope S_0x56252674eb00;
+T_0 ;
+    %vpi_call 2 40 "$dumpfile", "waveform.vcd" {0 0 0};
+    %vpi_call 2 41 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x56252674eb00 {0 0 0};
+    %vpi_call 2 42 "$monitor", $time, " sum=%b,carry=%b,a=%b,b=%b,c=%b", v0x562526763520_0, v0x562526763460_0, v0x56252674ec80_0, v0x562526763300_0, v0x5625267633c0_0 {0 0 0};
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x56252674ec80_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x562526763300_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x5625267633c0_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x56252674ec80_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x562526763300_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x5625267633c0_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x56252674ec80_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x562526763300_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x5625267633c0_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x56252674ec80_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x562526763300_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x5625267633c0_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x56252674ec80_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x562526763300_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x5625267633c0_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x56252674ec80_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x562526763300_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x5625267633c0_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x56252674ec80_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x562526763300_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x5625267633c0_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x56252674ec80_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x562526763300_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x5625267633c0_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_0x56252674eb00;
+T_1 ;
+    %delay 1000, 0;
+    %vpi_call 2 52 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "fullAdder.v";
