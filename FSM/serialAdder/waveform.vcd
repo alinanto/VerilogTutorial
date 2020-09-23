@@ -1,0 +1,119 @@
+$date
+	Wed Sep 23 20:59:47 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 1 ! S $end
+$var wire 1 " Cout $end
+$var reg 1 # A $end
+$var reg 1 $ B $end
+$var reg 1 % clk $end
+$var reg 8 & inputA [7:0] $end
+$var reg 8 ' inputB [7:0] $end
+$var reg 1 ( reset $end
+$var integer 32 ) i [31:0] $end
+$scope module DUT $end
+$var wire 1 # A $end
+$var wire 1 $ B $end
+$var wire 1 % clk $end
+$var wire 1 ( reset $end
+$var reg 1 " Cout $end
+$var reg 1 ! S $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx )
+0(
+b10111011 '
+b100110 &
+0%
+x$
+x#
+x"
+x!
+$end
+#1
+0!
+0"
+1(
+#2
+1$
+0#
+b0 )
+0(
+#5
+1!
+1%
+#10
+0%
+#12
+1#
+b1 )
+#15
+0!
+1"
+1%
+#20
+0%
+#22
+0$
+b10 )
+#25
+1%
+#30
+0%
+#32
+1$
+0#
+b11 )
+#35
+1%
+#40
+0%
+#42
+b100 )
+#45
+1%
+#50
+0%
+#52
+1#
+b101 )
+#55
+1!
+1%
+#60
+0%
+#62
+0$
+0#
+b110 )
+#65
+0"
+1%
+#70
+0%
+#72
+1$
+b111 )
+#75
+1%
+#80
+0%
+#82
+b1000 )
+#85
+1%
+#90
+0%
+#95
+1%
+#100
+0%
