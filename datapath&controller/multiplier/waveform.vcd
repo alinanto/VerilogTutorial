@@ -1,0 +1,367 @@
+$date
+	Thu Sep 24 13:01:27 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 1 ! eqz $end
+$var wire 1 " done $end
+$var wire 1 # decB $end
+$var wire 1 $ clrP $end
+$var wire 1 % LdP $end
+$var wire 1 & LdB $end
+$var wire 1 ' LdA $end
+$var reg 1 ( clk $end
+$var reg 16 ) dataBus [15:0] $end
+$var reg 1 * start $end
+$scope module MC $end
+$var wire 1 ( clk $end
+$var wire 1 * start $end
+$var wire 1 ! eqz $end
+$var reg 1 ' LdA $end
+$var reg 1 & LdB $end
+$var reg 1 % LdP $end
+$var reg 1 $ clrP $end
+$var reg 1 # decB $end
+$var reg 1 " done $end
+$var reg 3 + state [2:0] $end
+$upscope $end
+$scope module MD $end
+$var wire 1 ' LdA $end
+$var wire 1 & LdB $end
+$var wire 1 % LdP $end
+$var wire 1 ( clk $end
+$var wire 1 $ clrP $end
+$var wire 16 , dataBus [15:0] $end
+$var wire 1 # decB $end
+$var wire 1 ! eqz $end
+$var wire 16 - Sum [15:0] $end
+$var wire 16 . Pout [15:0] $end
+$var wire 16 / Bout [15:0] $end
+$var wire 16 0 Aout [15:0] $end
+$scope module A $end
+$var wire 1 ' Ld $end
+$var wire 1 ( clk $end
+$var wire 1 1 clr $end
+$var wire 1 2 dec $end
+$var wire 16 3 in [15:0] $end
+$var reg 16 4 out [15:0] $end
+$upscope $end
+$scope module B $end
+$var wire 1 & Ld $end
+$var wire 1 ( clk $end
+$var wire 1 5 clr $end
+$var wire 1 # dec $end
+$var wire 16 6 in [15:0] $end
+$var reg 16 7 out [15:0] $end
+$upscope $end
+$scope module P $end
+$var wire 1 % Ld $end
+$var wire 1 ( clk $end
+$var wire 1 $ clr $end
+$var wire 1 8 dec $end
+$var wire 16 9 in [15:0] $end
+$var reg 16 : out [15:0] $end
+$upscope $end
+$scope module add $end
+$var wire 16 ; A [15:0] $end
+$var wire 16 < B [15:0] $end
+$var wire 16 = Sum [15:0] $end
+$upscope $end
+$scope module comp $end
+$var wire 16 > in [15:0] $end
+$var wire 1 ! eqz $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx >
+bx =
+bx <
+bx ;
+bx :
+bx 9
+08
+bx 7
+b111 6
+05
+bx 4
+b111 3
+02
+01
+bx 0
+bx /
+bx .
+bx -
+b111 ,
+bx +
+0*
+b111 )
+0(
+x'
+x&
+x%
+x$
+x#
+x"
+x!
+$end
+#1
+1*
+#5
+0"
+0#
+0$
+0%
+0&
+0'
+b0 +
+1(
+#10
+0(
+#15
+1'
+b1 +
+1(
+#20
+b111 0
+b111 4
+b111 ;
+0(
+#25
+1$
+1&
+0'
+b10 +
+1(
+b1111 )
+b1111 ,
+b1111 3
+b1111 6
+#30
+b111 -
+b111 9
+b111 =
+b0 .
+b0 :
+b0 <
+0!
+b1111 /
+b1111 7
+b1111 >
+0(
+#35
+1#
+0$
+1%
+0&
+b11 +
+1(
+#40
+b1110 /
+b1110 7
+b1110 >
+b1110 -
+b1110 9
+b1110 =
+b111 .
+b111 :
+b111 <
+0(
+#45
+1(
+#50
+b10101 -
+b10101 9
+b10101 =
+b1110 .
+b1110 :
+b1110 <
+b1101 /
+b1101 7
+b1101 >
+0(
+#55
+1(
+#60
+b1100 /
+b1100 7
+b1100 >
+b11100 -
+b11100 9
+b11100 =
+b10101 .
+b10101 :
+b10101 <
+0(
+#65
+1(
+#70
+b100011 -
+b100011 9
+b100011 =
+b11100 .
+b11100 :
+b11100 <
+b1011 /
+b1011 7
+b1011 >
+0(
+#75
+1(
+#80
+b1010 /
+b1010 7
+b1010 >
+b101010 -
+b101010 9
+b101010 =
+b100011 .
+b100011 :
+b100011 <
+0(
+#85
+1(
+#90
+b110001 -
+b110001 9
+b110001 =
+b101010 .
+b101010 :
+b101010 <
+b1001 /
+b1001 7
+b1001 >
+0(
+#95
+1(
+#100
+b1000 /
+b1000 7
+b1000 >
+b111000 -
+b111000 9
+b111000 =
+b110001 .
+b110001 :
+b110001 <
+0(
+#105
+1(
+#110
+b111111 -
+b111111 9
+b111111 =
+b111000 .
+b111000 :
+b111000 <
+b111 /
+b111 7
+b111 >
+0(
+#115
+1(
+#120
+b110 /
+b110 7
+b110 >
+b1000110 -
+b1000110 9
+b1000110 =
+b111111 .
+b111111 :
+b111111 <
+0(
+#125
+1(
+#130
+b1001101 -
+b1001101 9
+b1001101 =
+b1000110 .
+b1000110 :
+b1000110 <
+b101 /
+b101 7
+b101 >
+0(
+#135
+1(
+#140
+b100 /
+b100 7
+b100 >
+b1010100 -
+b1010100 9
+b1010100 =
+b1001101 .
+b1001101 :
+b1001101 <
+0(
+#145
+1(
+#150
+b1011011 -
+b1011011 9
+b1011011 =
+b1010100 .
+b1010100 :
+b1010100 <
+b11 /
+b11 7
+b11 >
+0(
+#155
+1(
+#160
+b10 /
+b10 7
+b10 >
+b1100010 -
+b1100010 9
+b1100010 =
+b1011011 .
+b1011011 :
+b1011011 <
+0(
+#165
+1(
+#170
+b1101001 -
+b1101001 9
+b1101001 =
+b1100010 .
+b1100010 :
+b1100010 <
+b1 /
+b1 7
+b1 >
+0(
+#175
+1(
+#180
+1!
+b0 /
+b0 7
+b0 >
+b1110000 -
+b1110000 9
+b1110000 =
+b1101001 .
+b1101001 :
+b1101001 <
+0(
+#185
+1"
+0#
+0%
+b100 +
+1(
+#190
+0(

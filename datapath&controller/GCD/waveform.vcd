@@ -1,0 +1,316 @@
+$date
+	Thu Sep 24 19:03:33 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 1 ! selIn $end
+$var wire 1 " sel $end
+$var wire 1 # lt $end
+$var wire 1 $ gt $end
+$var wire 1 % eq $end
+$var wire 1 & done $end
+$var wire 1 ' LdB $end
+$var wire 1 ( LdA $end
+$var reg 1 ) clk $end
+$var reg 16 * data [15:0] $end
+$var reg 1 + start $end
+$scope module CT $end
+$var wire 1 ) clk $end
+$var wire 1 + start $end
+$var wire 1 # lt $end
+$var wire 1 $ gt $end
+$var wire 1 % eq $end
+$var reg 1 ( LdA $end
+$var reg 1 ' LdB $end
+$var reg 1 & done $end
+$var reg 3 , nextState [2:0] $end
+$var reg 1 " sel $end
+$var reg 1 ! selIn $end
+$var reg 3 - state [2:0] $end
+$upscope $end
+$scope module DP $end
+$var wire 1 ( LdA $end
+$var wire 1 ' LdB $end
+$var wire 1 ) clk $end
+$var wire 16 . data [15:0] $end
+$var wire 1 " sel $end
+$var wire 1 ! selIn $end
+$var wire 1 # lt $end
+$var wire 1 $ gt $end
+$var wire 1 % eq $end
+$var wire 16 / Y [15:0] $end
+$var wire 16 0 X [15:0] $end
+$var wire 16 1 SubOut [15:0] $end
+$var wire 16 2 Bus [15:0] $end
+$var wire 16 3 Bout [15:0] $end
+$var wire 16 4 Aout [15:0] $end
+$scope module A $end
+$var wire 1 ( Ld $end
+$var wire 1 ) clk $end
+$var wire 16 5 in [15:0] $end
+$var reg 16 6 out [15:0] $end
+$upscope $end
+$scope module B $end
+$var wire 1 ' Ld $end
+$var wire 1 ) clk $end
+$var wire 16 7 in [15:0] $end
+$var reg 16 8 out [15:0] $end
+$upscope $end
+$scope module M1 $end
+$var wire 16 9 in0 [15:0] $end
+$var wire 16 : in1 [15:0] $end
+$var wire 1 " sel $end
+$var wire 16 ; out [15:0] $end
+$upscope $end
+$scope module M2 $end
+$var wire 16 < in0 [15:0] $end
+$var wire 16 = in1 [15:0] $end
+$var wire 1 " sel $end
+$var wire 16 > out [15:0] $end
+$upscope $end
+$scope module Min $end
+$var wire 16 ? in0 [15:0] $end
+$var wire 1 ! sel $end
+$var wire 16 @ out [15:0] $end
+$var wire 16 A in1 [15:0] $end
+$upscope $end
+$scope module comp $end
+$var wire 16 B in0 [15:0] $end
+$var wire 16 C in1 [15:0] $end
+$var wire 1 # lt $end
+$var wire 1 $ gt $end
+$var wire 1 % eq $end
+$upscope $end
+$scope module sub $end
+$var wire 16 D in0 [15:0] $end
+$var wire 16 E in1 [15:0] $end
+$var wire 16 F out [15:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx F
+bx E
+bx D
+bx C
+bx B
+bx A
+b100111 @
+b100111 ?
+bx >
+bx =
+bx <
+bx ;
+bx :
+bx 9
+bx 8
+b100111 7
+bx 6
+b100111 5
+bx 4
+bx 3
+b100111 2
+bx 1
+bx 0
+bx /
+b100111 .
+bx -
+b0 ,
+0+
+b100111 *
+0)
+0(
+0'
+0&
+x%
+x$
+x#
+0"
+0!
+$end
+#1
+1+
+#5
+b1 ,
+b0 -
+1)
+#10
+0)
+#15
+1(
+b10 ,
+b1 -
+1)
+#20
+b100111 0
+b100111 ;
+b100111 D
+b100111 4
+b100111 6
+b100111 9
+b100111 =
+b100111 B
+0)
+#25
+1'
+0(
+b10 -
+b1000001 2
+b1000001 5
+b1000001 7
+b1000001 @
+1)
+b1000001 *
+b1000001 .
+b1000001 ?
+#30
+b1111111111100110 1
+b1111111111100110 A
+b1111111111100110 F
+b1000001 /
+b1000001 >
+b1000001 E
+b11 ,
+1#
+0$
+0%
+b1000001 3
+b1000001 8
+b1000001 :
+b1000001 <
+b1000001 C
+0)
+#35
+b11010 2
+b11010 5
+b11010 7
+b11010 @
+b1000001 0
+b1000001 ;
+b1000001 D
+b11010 1
+b11010 A
+b11010 F
+b100111 /
+b100111 >
+b100111 E
+1!
+1"
+b11 -
+1)
+#40
+b1111111111110011 2
+b1111111111110011 5
+b1111111111110011 7
+b1111111111110011 @
+b1111111111110011 1
+b1111111111110011 A
+b1111111111110011 F
+b11010 0
+b11010 ;
+b11010 D
+b100 ,
+0#
+1$
+b11010 3
+b11010 8
+b11010 :
+b11010 <
+b11010 C
+0)
+#45
+b1101 2
+b1101 5
+b1101 7
+b1101 @
+b100111 0
+b100111 ;
+b100111 D
+b1101 1
+b1101 A
+b1101 F
+b11010 /
+b11010 >
+b11010 E
+0"
+0'
+1(
+b100 -
+1)
+#50
+b1111111111110011 2
+b1111111111110011 5
+b1111111111110011 7
+b1111111111110011 @
+b1111111111110011 1
+b1111111111110011 A
+b1111111111110011 F
+b1101 0
+b1101 ;
+b1101 D
+b11 ,
+1#
+0$
+b1101 4
+b1101 6
+b1101 9
+b1101 =
+b1101 B
+0)
+#55
+b1101 2
+b1101 5
+b1101 7
+b1101 @
+b11010 0
+b11010 ;
+b11010 D
+b1101 1
+b1101 A
+b1101 F
+b1101 /
+b1101 >
+b1101 E
+1"
+1'
+0(
+b11 -
+1)
+#60
+b0 2
+b0 5
+b0 7
+b0 @
+b0 1
+b0 A
+b0 F
+b1101 0
+b1101 ;
+b1101 D
+b101 ,
+0#
+1%
+b1101 3
+b1101 8
+b1101 :
+b1101 <
+b1101 C
+0)
+#65
+1&
+0'
+b101 -
+1)
+#70
+0)
+#75
+1)
+#80
+0)
